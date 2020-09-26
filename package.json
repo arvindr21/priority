@@ -48,6 +48,8 @@
     "electron-reload": "^1.5.0",
     "electron-squirrel-startup": "^1.0.0",
     "sirv-cli": "^0.4.4",
+    "svelte-local-storage-store": "^0.1.3",
+    "svelte-tooltip": "^1.2.0",
     "sveltestrap": "^3.8.1"
   },
   "devDependencies": {

@@ -19,7 +19,7 @@
   import Icon from "fa-svelte";
   import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons/faQuestionCircle";
 
-  let icon = faQuestionCircle;  
+  let icon = faQuestionCircle;
 
   let isOpen = false;
 
@@ -30,18 +30,18 @@
   let open = false;
   const toggle = () => (open = !open);
 </script>
+ 
 
-<div>
-  <Navbar color="dark" dark expand="md">
-    <NavbarBrand href="/">Priority</NavbarBrand>
+<div class="border-bottom shadow mb-5">
+  <Navbar color="dark" dark expand="sm" class="p-2">
+    <NavbarBrand href="javascript:void(0)" class="pl-5">Priority</NavbarBrand>
     <NavbarToggler on:click={() => (isOpen = !isOpen)} />
-    <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
+    <Collapse {isOpen} navbar expand="sm" on:update={handleUpdate}>
       <Nav class="ml-auto" navbar>
         <NavItem>
-          <NavLink on:click={toggle}>
+          <NavLink on:click={toggle} class="pr-1">
             Eisenhower Matrix
-            <Icon icon={icon} class="mr-2 ml-2">
-            </Icon>            
+            <Icon {icon} class="mt-n1" />
           </NavLink>
         </NavItem>
       </Nav>
