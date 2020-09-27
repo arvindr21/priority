@@ -2,7 +2,7 @@
   "package": "package.json",
   "blueprint": "blueprint.md",
   "input": "blueprint.md",
-  "output": "priority.md",
+  "output": "readme.md",
   "text": "Use this priority generator to easily generate beautiful priority's like this one! Simply extend your <code>package.json</code> and create a priority blueprint. On Github, the priority file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression.",
   "logo": {
     "src": "https://github.com/arvindr21/priority/blob/master/public/icons/icon.dark.1024.png",
