@@ -1,7 +1,7 @@
 <!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><p align="center">
   <img src="https://github.com/arvindr21/priority/blob/master/public/icons/icon.dark.1024.png" alt="Logo" width="150" height="150" />
 </p>
-<h1 align="center">@arvindr21/priority</h1>
+<h1 align="center">priority</h1>
 <p align="center">
 		<a href="https://npmcharts.com/compare/@arvindr21/priority?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@arvindr21/priority.svg" height="20"/></a>
 <a href="https://www.npmjs.com/package/@arvindr21/priority"><img alt="NPM Version" src="https://img.shields.io/npm/v/@arvindr21/priority.svg" height="20"/></a>
@@ -109,7 +109,7 @@ Let's start simple. In order to get values from your `package.json` file injecte
 
 ```json
 {
-  "name": "@arvindr21/priority",
+  "name": "priority",
   "version": "1.0.0"
 }
 ```
@@ -123,7 +123,7 @@ Welcome to {{ pkg.name }}. This is version {{ pkg.version }}!
 When running `node_modules/.bin/priority generate` the file `README.md` will be generated with the following contents:
 
 ```markdown
-Welcome to @arvindr21/priority. This is version 1.0.0.
+Welcome to priority. This is version 1.0.0.
 ```
 
 ### Usage
@@ -173,13 +173,13 @@ If you have come this far you are probably interested to figure out how to use R
 
 Let's start with the title template. To generate the title you write `{{ template:title }}` in your blueprint. When you run the `readme` command the template will generate the following:
 
-<h1 align="center">@arvindr21/priority</h1>
+<h1 align="center">priority</h1>
 
 The important thing to note here is that the template automatically reads your `package.json` file and inserts the `name` from the package.
 
 ```json
 {
-  "name": "@arvindr21/priority"
+  "name": "priority"
 }
 ```
 
@@ -503,6 +503,7 @@ Objects are formatted as a list with the keys being bold. If you for example wan
 - **electron-log**: ^4.2.4
 - **electron-squirrel-startup**: ^1.0.0
 - **eslint-config-standard**: ^14.1.1
+- **nucleus-nodejs**: ^3.0.6
 - **sirv-cli**: ^1.0.6
 - **svelte-local-storage-store**: ^0.1.3
 - **svelte-tooltip**: ^1.2.0
