@@ -1,19 +1,19 @@
 <!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/logo-shadow.png" alt="Logo" width="150" height="150" />
+  <img src="https://github.com/arvindr21/priority/blob/master/public/icons/icon.dark.1024.png" alt="Logo" width="150" height="150" />
 </p>
-<h1 align="center">priority</h1>
+<h1 align="center">@arvindr21/priority</h1>
 <p align="center">
-		<a href="https://npmcharts.com/compare/@appnest/readme?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@appnest/readme.svg" height="20"/></a>
-<a href="https://www.npmjs.com/package/@appnest/readme"><img alt="NPM Version" src="https://img.shields.io/npm/v/@appnest/readme.svg" height="20"/></a>
-<a href="https://david-dm.org/andreasbm/readme"><img alt="Dependencies" src="https://img.shields.io/david/andreasbm/readme.svg" height="20"/></a>
-<a href="https://github.com/andreasbm/readme/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/andreasbm/readme.svg" height="20"/></a>
+		<a href="https://npmcharts.com/compare/@arvindr21/priority?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@arvindr21/priority.svg" height="20"/></a>
+<a href="https://www.npmjs.com/package/@arvindr21/priority"><img alt="NPM Version" src="https://img.shields.io/npm/v/@arvindr21/priority.svg" height="20"/></a>
+<a href="https://david-dm.org/arvindr21/priority"><img alt="Dependencies" src="https://img.shields.io/david/arvindr21/priority.svg" height="20"/></a>
+<a href="https://github.com/arvindr21/priority/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/arvindr21/priority.svg" height="20"/></a>
 <a href="https://github.com/badges/shields"><img alt="Custom badge" src="https://img.shields.io/badge/custom-badge-f39f37.svg" height="20"/></a>
-<a href="https://github.com/andreasbm/readme/graphs/commit-activity"><img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
+<a href="https://github.com/arvindr21/priority/graphs/commit-activity"><img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
 	</p>
 
 <p align="center">
   <b>An Eisenhower Matrix implementation for productivity</b></br>
-  <sub>Use this readme generator to easily generate beautiful readme's like this one! Simply extend your <code>package.json</code> and create a readme blueprint. On Github, the README file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression.<sub>
+  <sub>Use this priority generator to easily generate beautiful priority's like this one! Simply extend your <code>package.json</code> and create a priority blueprint. On Github, the priority file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression.<sub>
 </p>
 
 <br />
@@ -47,6 +47,7 @@
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Contributors](#contributors)
+- [➤ Contributors](#-contributors)
   - [License](#license)
 - [➤ License](#-license)
 - [➤ Load markdown files](#-load-markdown-files)
@@ -69,6 +70,7 @@
   - [How can I get involved?](#how-can-i-get-involved)
   - [I already have a large README file - I don't have time to rewrite everything!](#i-already-have-a-large-readme-file---i-dont-have-time-to-rewrite-everything)
   - [How can I support you?](#how-can-i-support-you)
+- [➤ Contributors](#-contributors-1)
 - [➤ License](#-license-1)
 </details>
 
@@ -77,10 +79,10 @@
 ## ➤ Installation
 
 ```javascript
-npm install @appnest/readme -D
+npm install @arvindr21/priority -D
 ```
 
-If you don't want to install anything you can use the `npx @appnest/readme generate` command instead.
+If you don't want to install anything you can use the `npx @arvindr21/priority generate` command instead.
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#getting-started-quick)
 
@@ -89,7 +91,7 @@ If you don't want to install anything you can use the `npx @appnest/readme gener
 This getting started guide is super quick! Follow these two steps and you will have turned your boring readme into a pretty one.
 
 1. Rename your current `README.md` file to `blueprint.md`.
-2. Run `npx @appnest/readme generate`
+2. Run `npx @arvindr21/priority generate`
 
 That's it! Check out your freshly generated `README.md` file and enjoy the fruits of what you just did.
 
@@ -107,7 +109,7 @@ Let's start simple. In order to get values from your `package.json` file injecte
 
 ```json
 {
-  "name": "priority",
+  "name": "@arvindr21/priority",
   "version": "1.0.0"
 }
 ```
@@ -118,15 +120,15 @@ To get the `name` and `version` into your README file you will need to write `{{
 Welcome to {{ pkg.name }}. This is version {{ pkg.version }}!
 ```
 
-When running `node_modules/.bin/readme generate` the file `README.md` will be generated with the following contents:
+When running `node_modules/.bin/priority generate` the file `README.md` will be generated with the following contents:
 
 ```markdown
-Welcome to priority. This is version 1.0.0.
+Welcome to @arvindr21/priority. This is version 1.0.0.
 ```
 
 ### Usage
 
-Run the `node_modules/.bin/readme generate` command and a README file will be generated for you. If you want to go into depth with the readme command, check out the following options or write `node_modules/.bin/readme generate -h` in your terminal if that's your cup of tea.
+Run the `node_modules/.bin/priority generate` command and a README file will be generated for you. If you want to go into depth with the readme command, check out the following options or write `node_modules/.bin/priority generate -h` in your terminal if that's your cup of tea.
 
 | Option                | Type                                                                       | Description                                                                                                          |
 | --------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -135,14 +137,14 @@ Run the `node_modules/.bin/readme generate` command and a README file will be ge
 | --pkg.name            | string                                                                     | Name of the project. Used for the 'title' template.                                                                  |
 | --pkg.contributors    | {name: string; email: string; url: string; img: string; info: string[];}[] | Contributors of the project. Used for the 'contributors' template.                                                   |
 | --pkg.license         | string                                                                     | License kind. Used for the 'license' template.                                                                       |
-| -o, --output          | string                                                                     | Path of the generated README file. Defaults to 'README.md'.                                                          |
+| -o, --output          | string                                                                     | Path of the generated priority file. Defaults to 'priority.md'.                                                      |
 | -h, --help            |                                                                            | Display this help message.                                                                                           |
 | -i, --input           | string                                                                     | The blueprint. Defaults to 'blueprint.md'.                                                                           |
 | --badges              | {alt: string, url: string, img: string}[]                                  | Badges. Used for the 'badges' template.                                                                              |
 | --text                | string                                                                     | Text describing your project. Used for the 'description' template.                                                   |
 | --demo                | string                                                                     | Demo url for your project. Used for the 'description' template.                                                      |
-| --lineBreak           | string                                                                     | The linebreak used in the generation of the README file. Defaults to 'rn'                                            |
-| --tab                 | string                                                                     | The tab used in the generation of the README file. Defaults to 't'                                                   |
+| --lineBreak           | string                                                                     | The linebreak used in the generation of the priority file. Defaults to 'rn'                                          |
+| --tab                 | string                                                                     | The tab used in the generation of the priority file. Defaults to 't'                                                 |
 | --placeholder         | [string, string]                                                           | The placeholder syntax used when looking for templates in the blueprint. Defaults to '["{{", "}}"].                  |
 | --line                | string                                                                     | The line style of the titles. Can also be an URL. Defaults to 'colored'.                                             |
 | --templates           | {name: string, template: string}[]                                         | User created templates.                                                                                              |
@@ -153,7 +155,7 @@ Run the `node_modules/.bin/readme generate` command and a README file will be ge
 | --contributorsPerRow  | number                                                                     | The amount of contributors pr row when using the 'contributors' template. Defaults to '6'                            |
 | --documentationConfig | object                                                                     | Configuration object for automatic documentation template.                                                           |
 | --extend              | string                                                                     | Path to another configuration object that should be extended.                                                        |
-| --checkLinks          | boolean                                                                    | Checks all links for aliveness after the README file has been generated.                                             |
+| --checkLinks          | boolean                                                                    | Checks all links for aliveness after the priority file has been generated.                                           |
 
 ### Configuration
 
@@ -171,13 +173,13 @@ If you have come this far you are probably interested to figure out how to use R
 
 Let's start with the title template. To generate the title you write `{{ template:title }}` in your blueprint. When you run the `readme` command the template will generate the following:
 
-<h1 align="center">priority</h1>
+<h1 align="center">@arvindr21/priority</h1>
 
 The important thing to note here is that the template automatically reads your `package.json` file and inserts the `name` from the package.
 
 ```json
 {
-  "name": "priority"
+  "name": "@arvindr21/priority"
 }
 ```
 
@@ -188,7 +190,7 @@ That's cool. Let's go through some of the other built-in templates you might wan
 The logo template adds a logo to your readme and looks like this:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/logo-shadow.png" alt="Logo" width="150" height="150" />
+  <img src="https://github.com/arvindr21/priority/blob/master/public/icons/icon.dark.1024.png" alt="Logo" width="150" height="150" />
 </p>
 
 Use the placeholder `{{ template:logo }}` to stamp it. You will need to add the `logo` field to your `blueprint.json`. The logo field requires an `src` field. Optionally you can provide values for `width`, `height` and `alt`. Below is an example on how to add the data for the logo template.
@@ -196,7 +198,7 @@ Use the placeholder `{{ template:logo }}` to stamp it. You will need to add the 
 ```json
 {
   "logo": {
-    "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/logo-shadow.png",
+    "src": "https://github.com/arvindr21/priority/blob/master/public/icons/icon.dark.1024.png",
     "width": "150"
   }
 }
@@ -207,12 +209,12 @@ Use the placeholder `{{ template:logo }}` to stamp it. You will need to add the 
 The badges template adds badges to your readme and looks like this:
 
 <p align="center">
-		<a href="https://npmcharts.com/compare/@appnest/readme?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@appnest/readme.svg" height="20"/></a>
-<a href="https://www.npmjs.com/package/@appnest/readme"><img alt="NPM Version" src="https://img.shields.io/npm/v/@appnest/readme.svg" height="20"/></a>
-<a href="https://david-dm.org/andreasbm/readme"><img alt="Dependencies" src="https://img.shields.io/david/andreasbm/readme.svg" height="20"/></a>
-<a href="https://github.com/andreasbm/readme/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/andreasbm/readme.svg" height="20"/></a>
+		<a href="https://npmcharts.com/compare/@arvindr21/priority?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@arvindr21/priority.svg" height="20"/></a>
+<a href="https://www.npmjs.com/package/@arvindr21/priority"><img alt="NPM Version" src="https://img.shields.io/npm/v/@arvindr21/priority.svg" height="20"/></a>
+<a href="https://david-dm.org/arvindr21/priority"><img alt="Dependencies" src="https://img.shields.io/david/arvindr21/priority.svg" height="20"/></a>
+<a href="https://github.com/arvindr21/priority/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/arvindr21/priority.svg" height="20"/></a>
 <a href="https://github.com/badges/shields"><img alt="Custom badge" src="https://img.shields.io/badge/custom-badge-f39f37.svg" height="20"/></a>
-<a href="https://github.com/andreasbm/readme/graphs/commit-activity"><img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
+<a href="https://github.com/arvindr21/priority/graphs/commit-activity"><img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
 	</p>
 
 Use the `{{ template:badges }}` placeholder to stamp it. You will need to add the data about how the badges should be generated. For that you can extend the `ids` property in your `blueprint.json` and add the `npm` and `github` ids (both are optional). If you want to add your own badges you can use the `badges` field.
@@ -220,8 +222,8 @@ Use the `{{ template:badges }}` placeholder to stamp it. You will need to add th
 ```json
 {
   "ids": {
-    "github": "andreasbm/readme",
-    "npm": "@appnest/readme"
+    "github": "arvindr21/priority",
+    "npm": "@arvindr21/priority"
   },
   "badges": [
     {
@@ -241,7 +243,7 @@ The description template adds a description to your readme and looks like this:
 
 <p align="center">
   <b>An Eisenhower Matrix implementation for productivity</b></br>
-  <sub>Use this readme generator to easily generate beautiful readme's like this one! Simply extend your <code>package.json</code> and create a readme blueprint. On Github, the README file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression.<sub>
+  <sub>Use this priority generator to easily generate beautiful priority's like this one! Simply extend your <code>package.json</code> and create a priority blueprint. On Github, the priority file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression.<sub>
 </p>
 
 <br />
@@ -260,7 +262,7 @@ Use the `{{ template:description }}` placeholder to stamp it. To use this templa
 
 ```json
 {
-  "text": "Use this readme generator to easily generate beautiful readme's like this one! Simply extend your <code>package.json</code> and create a readme blueprint. On Github, the README file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression."
+  "text": "Use this priority generator to easily generate beautiful priority's like this one! Simply extend your <code>package.json</code> and create a priority blueprint. On Github, the priority file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression."
 }
 ```
 
@@ -286,6 +288,7 @@ The table of contents template adds a table of contents and looks like this:
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Contributors](#contributors)
+- [➤ Contributors](#-contributors)
   - [License](#license)
 - [➤ License](#-license)
 - [➤ Load markdown files](#-load-markdown-files)
@@ -308,6 +311,7 @@ The table of contents template adds a table of contents and looks like this:
   - [How can I get involved?](#how-can-i-get-involved)
   - [I already have a large README file - I don't have time to rewrite everything!](#i-already-have-a-large-readme-file---i-dont-have-time-to-rewrite-everything)
   - [How can I support you?](#how-can-i-support-you)
+- [➤ Contributors](#-contributors-1)
 - [➤ License](#-license-1)
 
 Use the `{{ template:toc }}` placeholder to stamp it. It has been scientifically proven that this template will save you approximately 392.3 hours during your life-time. Seriously.
@@ -316,7 +320,9 @@ Use the `{{ template:toc }}` placeholder to stamp it. It has been scientifically
 
 The contributors template adds the list of contributors and looks like this:
 
-[[ template:contributors ]]
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#contributors)
+
+## ➤ Contributors
 
 Use the `{{ template:contributors }}` placeholder to stamp it. Let's sa To use this template your are required to add the `contributors` array to your `package.json` file like this. Only the `name` field is required.
 
@@ -456,7 +462,7 @@ You are able to create your own templates to keep things as DRY as a hot summer 
 
 Then you can stamp your custom template using the `{{ template:install }}` syntax ("install" here referencing the name of the custom template). The below is an example of what is stamped to the README file using the above template.
 
-Run `npm install @appnest/readme' to install this library!
+Run `npm install @arvindr21/priority' to install this library!
 
 Be creative! You can for example add a template for code-snippets or [words you keep spelling wrong](https://en.oxforddictionaries.com/spelling/common-misspellings).
 
@@ -589,13 +595,7 @@ If you want some inspiration for symbols you can put infront of the headings you
 
 If you use this generator for one of your projects I would love to hear about it so I can feature it. Here's a list of some repositories using this generator for their README file.
 
-- [lit-translate](https://github.com/andreasbm/lit-translate)
-- [masonry-layout](https://github.com/andreasbm/masonry-layout)
-- [focus-trap](https://github.com/andreasbm/focus-trap)
-- [web-router](https://github.com/andreasbm/web-router)
-- [web-config](https://github.com/andreasbm/web-config)
-- [ts-lit-plugin](https://github.com/runem/ts-lit-plugin)
-- [blob](https://github.com/andreasbm/blob)
+- [diskdb](https://github.com/arvindr21/diskdb)
 
 As inspiration for the layout of the generated README files I initially found inspiration from [terkelg's brilliant repository called prompts](https://github.com/terkelg/prompts) - a prime example on how every README file should look! I therefore wanted to mention him here even though he doesn't use this README generator. If you want to see an example of a brilliant README file you should definitely check his repository out.
 
@@ -619,13 +619,15 @@ Create an issue or pull-request. You are also very welcome to throw me a message
 
 ### I already have a large README file - I don't have time to rewrite everything!
 
-No problem at all! Your first step can be to rename your `README.md` to `blueprint.md` and run `node_modules/.bin/readme generate`. Already then your README should now be well-formatted. Then you can slowly replace the contents when you have time. The low-hanging fruit would be to add the table of contents and license using respectively the `{{ template:toc }}` and `{{ template:license }}` templates.
+No problem at all! Your first step can be to rename your `README.md` to `blueprint.md` and run `node_modules/.bin/priority generate`. Already then your README should now be well-formatted. Then you can slowly replace the contents when you have time. The low-hanging fruit would be to add the table of contents and license using respectively the `{{ template:toc }}` and `{{ template:license }}` templates.
 
 ### How can I support you?
 
 There are lot's of ways to support me! I would be so happy if you gave this repository a star, tweeted about it or told your friends about this little corner of the Internet ❤️
 
-[[ template:contributors ]]
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#contributors)
+
+## ➤ Contributors
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#license)
 
