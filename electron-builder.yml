@@ -1,0 +1,16 @@
+directories:
+  output: releases
+  buildResources: build
+appId: com.arvindr21.priority
+productName: Priority
+copyright: Copyright © 2020 | Priority | Arvind Ravulavaru
+asar: true
+electronVersion: 8.0.2
+win:
+  publish:
+    - github
+mac:
+  category: public.app-category.productivity
+  icon: /Users/aravulavaru/Documents/public/tray-example/priority/public/icons/dark/icons/mac/icon.icns
+  publish:
+    - github

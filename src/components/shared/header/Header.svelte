@@ -22,7 +22,6 @@
   import { faQuestionCircle, faBug } from "@fortawesome/free-solid-svg-icons";
   const {
     darkMode,
-    debugInfo,
     chromeVersion,
     appLaunchTimestamp,
     isFirstAppLaunch,
