@@ -1,8 +1,12 @@
-const { app, BrowserWindow, screen, Tray, Menu } = require('electron');
-const path = require('path');
+import { app, BrowserWindow, screen, Tray, Menu } from 'electron';
+import * as path from "path";
+import { LOG } from "./core/logger";
+
 let mainWindow = null;
+let appIcon = null;
 
 // Live Reload
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 require('electron-reload')(__dirname, {
     electron: path.join(__dirname, '../node_modules', '.bin', 'electron'),
     awaitWriteFinish: true
@@ -16,6 +20,8 @@ if (require('electron-squirrel-startup')) {
 
 const createWindow = () => {
     const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+
+    LOG.info('Started app with w x h =', width, 'x', height);
 
     app.allowRendererProcessReuse = false;
 
@@ -39,6 +45,8 @@ const createWindow = () => {
 
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
+
+    LOG.silly('Devtools open')
 };
 
 // This method will be called when Electron has finished

@@ -33,7 +33,8 @@ module.exports = {
                     owner: 'arvindr21',
                     name: 'priority'
                 },
-                prerelease: true
+                prerelease: true,
+                draft: true
             }
         }
     ],

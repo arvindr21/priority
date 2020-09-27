@@ -87,6 +87,7 @@ typings/
 
 # Electron-Forge
 out/
+public/build
 
 # local history
 .history
