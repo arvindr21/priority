@@ -11,6 +11,6 @@ win:
     - github
 mac:
   category: public.app-category.productivity
-  icon: /Users/aravulavaru/Documents/public/tray-example/priority/public/icons/dark/icons/mac/icon.icns
+  icon: public/icons/dark/icons/mac/icon.icns
   publish:
     - github

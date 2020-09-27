@@ -4,16 +4,15 @@ module.exports = {
 		platform: "linux,darwin,win32",
 		arch: "x64",
 		electronVersion: "8.0.2",
-		out: "/Users/aravulavaru/Documents/public/tray-example/priority/releases",
+		out: "releases",
 		appBundleId: "io.arvindr21.priority",
 		appVersion: "0.1.0",
 		overwrite: true,
 		asar: true,
-		icon: "/Users/aravulavaru/Documents/public/tray-example/priority/public/icons/light/icons/mac/icon.icns",
+		icon: "public/icons/light/icons/mac/icon.icns",
 		bundle_id: "co.arvindr21.priority",
 		appname: "priority",
-		sourcedir: "/Users/aravulavaru/Documents/public/tray-example/priority",
-		ignore: "/Users/aravulavaru/Documents/public/tray-example/priority/releases"
+		sourcedir: "/Users/aravulavaru/Documents/public/tray-example/priority"
 	},
 	"makers": [{
 		"name": "@electron-forge/maker-squirrel",

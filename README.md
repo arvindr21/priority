@@ -110,7 +110,7 @@ Let's start simple. In order to get values from your `package.json` file injecte
 ```json
 {
   "name": "priority",
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
 ```
 
@@ -123,7 +123,7 @@ Welcome to {{ pkg.name }}. This is version {{ pkg.version }}!
 When running `node_modules/.bin/priority generate` the file `README.md` will be generated with the following contents:
 
 ```markdown
-Welcome to priority. This is version 0.3.0.
+Welcome to priority. This is version 0.3.1.
 ```
 
 ### Usage
