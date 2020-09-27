@@ -25,18 +25,18 @@ module.exports = {
 	{
 		"name": "@electron-forge/maker-flatpak",
 		"config": {}
-	},
-	{
-		name: "@electron-forge/publisher-github",
-		config: {
-			repository: {
-				owner: "arvindr21",
-				name: "priority"
-			},
-			prerelease: true,
-			draft: true
-		}
 	}
+		// {
+		//     name: "@electron-forge/publisher-github",
+		//     config: {
+		//         repository: {
+		//             owner: "arvindr21",
+		//             name: "priority"
+		//         },
+		//         prerelease: true,
+		//         draft: true
+		//     }
+		// }
 	],
 	plugins: [
 		["@electron-forge/plugin-auto-unpack-natives"]
