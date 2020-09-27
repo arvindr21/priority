@@ -7,6 +7,7 @@
     ModalHeader,
     Badge,
   } from "sveltestrap";
+  import { Form, FormGroup, FormText, Input, Label } from 'sveltestrap';
   import SvelteTooltip from "svelte-tooltip";
   import Icon from "fa-svelte";
   import {
@@ -18,8 +19,18 @@
   let open = false;
   const toggle = () => (open = !open);
 
-  export let heading, color, cardbg;
-  import controller from './card-list.controller';
+  export let heading, color, cardbg, type;
+
+  let task = {
+    title: '',
+    notes: '',
+    type: type,
+    due: false,
+    date: '',
+    time: '',
+    remind: '',
+    reminder: ''
+  }
 </script>
 
 <style lang="scss">
@@ -89,13 +100,79 @@
 </div>
 
 <Modal isOpen={open} {toggle}>
-  <ModalHeader {toggle}>{heading}</ModalHeader>
+  <ModalHeader {toggle}>New `{heading}` Task</ModalHeader>
   <ModalBody>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.
+    <input type="hidden" value="{type}" name="type">
+    <Form>
+      <FormGroup>
+        <Label for="exampleEmail">Tasks</Label>
+        <Input
+          type="text"
+          bind:value={task.title}
+          placeholder="Enter New Task" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="examplePassword">Password</Label>
+        <Input
+          type="password"
+          name="password"
+          id="examplePassword"
+          placeholder="password placeholder" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleUrl">Url</Label>
+        <Input
+          type="url"
+          name="url"
+          id="exampleUrl"
+          placeholder="url placeholder" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleNumber">Number</Label>
+        <Input
+          type="number"
+          name="number"
+          id="exampleNumber"
+          placeholder="number placeholder" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleDatetime">Datetime</Label>
+        <Input
+          type="datetime"
+          name="datetime"
+          id="exampleDatetime"
+          placeholder="datetime placeholder" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleDate">Date</Label>
+        <Input
+          type="date"
+          name="date"
+          id="exampleDate"
+          placeholder="date placeholder" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleTime">Time</Label>
+        <Input
+          type="time"
+          name="time"
+          id="exampleTime"
+          placeholder="time placeholder" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="exampleColor">Color</Label>
+        <Input
+          type="color"
+          name="color"
+          id="exampleColor"
+          placeholder="color placeholder" />
+      </FormGroup>
+                
+    </Form>
+
   </ModalBody>
   <ModalFooter>
-    <Button color="primary" on:click={toggle}>Do Something</Button>
     <Button color="secondary" on:click={toggle}>Cancel</Button>
+    <Button color="primary" on:click={toggle}>Create</Button>    
   </ModalFooter>
 </Modal>

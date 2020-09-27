@@ -26,10 +26,13 @@ const createWindow = () => {
         center: true,
         resizable: false,
         minimizable: false,
+        frame: true,
         webPreferences: {
             nodeIntegration: true
         }
     });
+
+    mainWindow.setMenu(null);
 
     // and load the index.html of the app.
     mainWindow.loadFile(path.join(__dirname, '../public/index.html'));
