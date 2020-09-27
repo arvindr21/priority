@@ -167,12 +167,12 @@
           id="exampleColor"
           placeholder="color placeholder" />
       </FormGroup>
-                
+
     </Form>
 
   </ModalBody>
   <ModalFooter>
     <Button color="secondary" on:click={toggle}>Cancel</Button>
-    <Button color="primary" on:click={toggle}>Create</Button>    
+    <Button color="primary" on:click={toggle}>Create</Button>
   </ModalFooter>
 </Modal>
