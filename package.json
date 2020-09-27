@@ -1,5 +1,5 @@
 {
-    "name": "@arvindr21/priority",
+    "name": "priority",
     "version": "1.0.0",
     "description": "An Eisenhower Matrix implementation for productivity",
     "keywords": [
@@ -25,7 +25,7 @@
         "package": "electron-forge package",
         "publish": "electron-forge publish",
         "size": "size-limit",
-        "start": "electron-forge start",
+        "start": "concurrently \"npm:svelte-dev\" \"electron-forge start\"",
         "svelte-build": "rollup -c",
         "svelte-dev": "rollup -c -w",
         "svelte-start": "sirv public",
@@ -68,6 +68,7 @@
         "@electron-forge/publisher-github": "6.0.0-beta.53",
         "@fortawesome/free-solid-svg-icons": "^5.14.0",
         "@rollup/plugin-commonjs": "^15.1.0",
+        "@rollup/plugin-json": "^4.1.0",
         "@rollup/plugin-node-resolve": "^9.0.0",
         "@size-limit/preset-small-lib": "^4.6.0",
         "@stylelint/prettier-config": "^2.0.0",
@@ -76,7 +77,9 @@
         "@typescript-eslint/parser": "^4.2.0",
         "concurrently": "^5.1.0",
         "electron": "8.0.2",
+        "electron-is-dev": "^1.2.0",
         "electron-reload": "^1.5.0",
+        "electron-util": "^0.14.2",
         "eslint": "^7.10.0",
         "eslint-plugin-import": "^2.22.0",
         "eslint-plugin-node": "^11.1.0",

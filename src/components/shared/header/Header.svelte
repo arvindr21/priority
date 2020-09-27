@@ -1,8 +1,7 @@
 <script lang="ts">
+  const { openNewGitHubIssue } = require("electron-util");
   import {
-    Collapse,
     Navbar,
-    NavbarToggler,
     NavbarBrand,
     Nav,
     NavItem,
@@ -14,38 +13,84 @@
     Button,
     Col,
     Row,
+    FormGroup,
+    Input,
+    Label,
   } from "sveltestrap";
 
   import Icon from "fa-svelte";
-  import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons/faQuestionCircle";
+  import { faQuestionCircle, faBug } from "@fortawesome/free-solid-svg-icons";
+  const {
+    darkMode,
+    debugInfo,
+    chromeVersion,
+    appLaunchTimestamp,
+    isFirstAppLaunch,
+    isUsingAsar,
+  } = require("electron-util");
 
-  let icon = faQuestionCircle;
-
-  let isOpen = false;
-
-  function handleUpdate(event) {
-    isOpen = event.detail.isOpen;
-  }
-
-  let open = false;
+  let open = false,
+    fbOpen = false,
+    feedbackTxt = "";
   const toggle = () => (open = !open);
+  const toggleFeedback = () => (fbOpen = !fbOpen);
+  import pkg from "../../../../package.json";
+  const os = require("os");
+
+  const feedBack = () => {
+    if (!feedbackTxt.trim().length) {
+      return;
+    }
+
+    openNewGitHubIssue({
+      repoUrl: "https://github.com/arvindr21/priority",
+      user: "arvindr21",
+      repo: "priority",
+      body: `
+      Feedback:
+      --------
+      ${feedbackTxt}
+
+      App Info:
+      ----------
+      name: ${pkg.productName}
+      version: ${pkg.version}
+      DarkMode: ${darkMode.isEnabled}
+      chromeVersion: ${chromeVersion}
+      appLaunchTimestamp: ${appLaunchTimestamp}
+      isFirstAppLaunch: ${isFirstAppLaunch}
+      isUsingAsar: ${isUsingAsar}
+      type: ${os.type()}
+      cpu: ${JSON.stringify(os.cpus())}
+      arch: ${os.arch()}
+      totalMemory: ${os.totalmem() / 1048576} MB
+      freeMemory: ${os.freemem() / 1048576} MB
+      `,
+      title: "Feedback Report: Priority - " + os.hostname(),
+      labels: ["feedback", "from-app", "auto"],
+    });
+
+    toggleFeedback();
+  };
 </script>
- 
 
 <div class="border-bottom shadow mb-5">
   <Navbar color="dark" dark expand="sm" class="p-2">
     <NavbarBrand href="javascript:void(0)" class="pl-5">Priority</NavbarBrand>
-    <NavbarToggler on:click={() => (isOpen = !isOpen)} />
-    <Collapse {isOpen} navbar expand="sm" on:update={handleUpdate}>
-      <Nav class="ml-auto" navbar>
-        <NavItem>
-          <NavLink on:click={toggle} class="pr-1">
-            Eisenhower Matrix
-            <Icon {icon} class="mt-n1" />
-          </NavLink>
-        </NavItem>
-      </Nav>
-    </Collapse>
+    <Nav class="ml-auto" navbar>
+      <NavItem>
+        <NavLink on:click={toggle} class="pr-1">
+          Eisenhower Matrix
+          <Icon icon={faQuestionCircle} class="mt-n1" />
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink on:click={toggleFeedback} class="pr-1">
+          Feedback
+          <Icon icon={faBug} class="mt-n1" />
+        </NavLink>
+      </NavItem>
+    </Nav>
   </Navbar>
 
   <Modal isOpen={open} {toggle} size="lg">
@@ -179,5 +224,19 @@
         </ModalFooter>
       </Col>
     </Row>
+  </Modal>
+
+  <Modal isOpen={fbOpen} {toggleFeedback}>
+    <ModalHeader {toggleFeedback}>Your feedback Matters</ModalHeader>
+    <ModalBody>
+      <FormGroup>
+        <Label>Feedback</Label>
+        <Input type="textarea" bind:value={feedbackTxt} />
+      </FormGroup>
+    </ModalBody>
+    <ModalFooter>
+      <Button color="secondary" on:click={toggleFeedback}>Cancel</Button>
+      <Button color="primary" on:click={feedBack}>Generate Feeback</Button>
+    </ModalFooter>
   </Modal>
 </div>
