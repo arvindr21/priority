@@ -23,6 +23,9 @@
     "contributors": [],
     "main": "src/index.js",
     "scripts": {
+        "postinstall": "electron-builder install-app-deps",
+        "build": "electron-builder --mac --windows --linux",
+        "release": "electron-builder --mac --windows --linux --publish always",
         "icons": "npm-run-all --parallel icons:*",
         "icons:dark": "electron-icon-builder --input=public/icon.dark.png --output=public/icons/dark",
         "icons:light": "electron-icon-builder --input=public/icon.light.png --output=public/icons/light",
