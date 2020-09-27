@@ -44,9 +44,7 @@
     "config": {
         "forge": "./forge.config.js"
     },
-    "contributes": {
-
-    },
+    "contributors": [],
     "dependencies": {
         "electron-log": "^4.2.4",
         "electron-squirrel-startup": "^1.0.0",

@@ -47,6 +47,7 @@
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Contributors](#contributors)
+- [➤ Contributors](#-contributors)
   - [License](#license)
 - [➤ License](#-license)
 - [➤ Load markdown files](#-load-markdown-files)
@@ -69,6 +70,7 @@
   - [How can I get involved?](#how-can-i-get-involved)
   - [I already have a large README file - I don't have time to rewrite everything!](#i-already-have-a-large-readme-file---i-dont-have-time-to-rewrite-everything)
   - [How can I support you?](#how-can-i-support-you)
+- [➤ Contributors](#-contributors-1)
 - [➤ License](#-license-1)
 </details>
 
@@ -286,6 +288,7 @@ The table of contents template adds a table of contents and looks like this:
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Contributors](#contributors)
+- [➤ Contributors](#-contributors)
   - [License](#license)
 - [➤ License](#-license)
 - [➤ Load markdown files](#-load-markdown-files)
@@ -308,6 +311,7 @@ The table of contents template adds a table of contents and looks like this:
   - [How can I get involved?](#how-can-i-get-involved)
   - [I already have a large README file - I don't have time to rewrite everything!](#i-already-have-a-large-readme-file---i-dont-have-time-to-rewrite-everything)
   - [How can I support you?](#how-can-i-support-you)
+- [➤ Contributors](#-contributors-1)
 - [➤ License](#-license-1)
 
 Use the `{{ template:toc }}` placeholder to stamp it. It has been scientifically proven that this template will save you approximately 392.3 hours during your life-time. Seriously.
@@ -316,7 +320,9 @@ Use the `{{ template:toc }}` placeholder to stamp it. It has been scientifically
 
 The contributors template adds the list of contributors and looks like this:
 
-[[ template:contributors ]]
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#contributors)
+
+## ➤ Contributors
 
 Use the `{{ template:contributors }}` placeholder to stamp it. Let's sa To use this template your are required to add the `contributors` array to your `package.json` file like this. Only the `name` field is required.
 
@@ -619,7 +625,9 @@ No problem at all! Your first step can be to rename your `README.md` to `bluepri
 
 There are lot's of ways to support me! I would be so happy if you gave this repository a star, tweeted about it or told your friends about this little corner of the Internet ❤️
 
-[[ template:contributors ]]
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#contributors)
+
+## ➤ Contributors
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#license)
 
